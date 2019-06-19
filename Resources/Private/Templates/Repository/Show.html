@@ -1,0 +1,52 @@
+<f:comment>
+    <!--
+    This file is part of the TYPO3 CMS project.
+
+    It is free software; you can redistribute it and/or modify it under
+    the terms of the GNU General Public License, either version 2
+    of the License, or any later version.
+
+    For the full copyright and license information, please read the
+    LICENSE.txt file that was distributed with this source code.
+
+    The TYPO3 project - inspiring people to share!
+    -->
+</f:comment>
+
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+    <f:section name="content">
+        <script>
+            var SUBHH_OA_DASHBOARD_CHART_RECORD_COUNT_LEGEND = "{f:translate(key: 'subhh_oa_dashboard.chart.record_count.legend')}";
+            var SUBHH_OA_DASHBOARD_CHART_RECORD_COUNT_OA_LEGEND = "{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.legend')}";
+            var SUBHH_OA_DASHBOARD_CHART_RECORD_COUNT_FULLTEXT_LEGEND = "{f:translate(key: 'subhh_oa_dashboard.chart.record_count_fulltext.legend')}";
+            var SUBHH_OA_DASHBOARD_CHART_REPOSITORY_AVAILABILITY_LEGEND = "{f:translate(key: 'subhh_oa_dashboard.chart.repository_availability.legend')}";
+            var SUBHH_OA_DASHBOARD_CHART_SETS_LEGEND = "{f:translate(key: 'subhh_oa_dashboard.chart.sets.legend')}";
+
+            var SUBHH_OA_DASHBOARD_CHART_RECORD_COUNT_TITLE = "{f:translate(key: 'subhh_oa_dashboard.chart.record_count.title')}";
+            var SUBHH_OA_DASHBOARD_CHART_RECORD_COUNT_OA_TITLE = "{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.title')}";
+            var SUBHH_OA_DASHBOARD_CHART_RECORD_COUNT_FULLTEXT_TITLE = "{f:translate(key: 'subhh_oa_dashboard.chart.record_count_fulltext.title')}";
+            var SUBHH_OA_DASHBOARD_CHART_REPOSITORY_AVAILABILITY_TITLE = "{f:translate(key: 'subhh_oa_dashboard.chart.repository_availability.title')}";
+            var SUBHH_OA_DASHBOARD_CHART_LICENCE_TITLE = "{f:translate(key: 'subhh_oa_dashboard.chart.licence.title')}";
+            var SUBHH_OA_DASHBOARD_CHART_DOCUMENT_TYPES_TITLE = "{f:translate(key: 'subhh_oa_dashboard.chart.document_types.title')}";
+            var SUBHH_OA_DASHBOARD_CHART_SETS_TITLE = "{f:translate(key: 'subhh_oa_dashboard.chart.sets.title')}";
+
+
+            var SUBHH_OA_DASHBOARD_CHART_REPOSITORY_AVAILABILITY_YAXIS_LABEL = "{f:translate(key: 'subhh_oa_dashboard.chart.repository_availability.yaxis.label')}";
+            var SUBHH_OA_DASHBOARD_CHART_YAXIS_LABEL =  "{f:translate(key: 'subhh_oa_dashboard.chart.yaxis.label')}";
+            var SUBHH_OA_DASHBOARD_CHART_LAST_12_MONTH =  "{f:translate(key: 'subhh_oa_dashboard.chart.last12month')}";
+        </script>
+        <f:if condition="{repository.isAll}">
+            <f:then>
+                <f:render partial="Repository/DetailsAll" arguments="{repository:repository, timeRanges: timeRanges}" />
+            </f:then>
+            <f:else>
+                <f:render partial="Repository/Details" arguments="{repository:repository, timeRanges: timeRanges}" />
+            </f:else>
+        </f:if>
+
+    </f:section>
+
+</html>

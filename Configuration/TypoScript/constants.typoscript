@@ -1,0 +1,30 @@
+# -------------------------------------------------------------------
+# This file is part of the TYPO3 CMS project.
+#
+# It is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License, either version 2
+# of the License, or any later version.
+#
+# For the full copyright and license information, please read the
+# LICENSE.txt file that was distributed with this source code.
+#
+# The TYPO3 project - inspiring people to share!
+# -------------------------------------------------------------------
+
+plugin.tx_subhhoadashboard {
+    view {
+        # cat=plugin.tx_subhhoadashboard/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:subhh_oa_dashboard/Resources/Private/Templates/
+        # cat=plugin.tx_subhhoadashboard/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:subhh_oa_dashboard/Resources/Private/Partials/
+        # cat=plugin.tx_subhhoadashboard/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:subhh_oa_dashboard/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_subhhoadashboard//a; type=string; label=Default storage PID
+        storagePid =
+    }
+
+    settings {
+    }
+}

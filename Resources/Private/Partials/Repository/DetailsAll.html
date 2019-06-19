@@ -1,0 +1,43 @@
+<f:comment>
+    <!--
+    This file is part of the TYPO3 CMS project.
+
+    It is free software; you can redistribute it and/or modify it under
+    the terms of the GNU General Public License, either version 2
+    of the License, or any later version.
+
+    For the full copyright and license information, please read the
+    LICENSE.txt file that was distributed with this source code.
+
+    The TYPO3 project - inspiring people to share!
+    -->
+</f:comment>
+
+<h2 class="repository-name"> {f:translate(key: 'subhh_oa_dashboard.repository.name.all')}</h2>
+<table id="repository-details" class="repository-details details-all" data-repositoryId="{repository.id}">
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.earliestRecordTimestamp', value:repository.earliestRecordTimestamp}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.latestRecordTimestamp', value:repository.latestRecordTimestamp}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.recordCount', value:repository.recordCount}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.recordCountFulltext', value:repository.recordCountFulltext}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.recordCountOa', value:repository.recordCountOa}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.metadataFormats', value:repository.metadataFormats}" />
+</table>
+
+<div class="chart-wrapper chart-wrapper-licence">
+    <div id="chartLicence" class="repository-chart" data-getRecordLicenceUri="{repository.recordLicenceUri}"></div>
+</div>
+
+<div class="chart-wrapper chart-wrapper-document-types">
+    <div id="chartDocumentTypes" class="repository-chart" data-getRecordDocumentTypesUri="{repository.recordDocumentTypesUri}"></div>
+</div>
+
+<div class="chart-wrapper chart-wrapper-sets">
+    <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.sets.title')}</span>
+    <div id="chartSets" class="repository-chart"  data-getRepositorySetsUri="{repository.repositorySetsUri}"></div>
+</div>

@@ -1,0 +1,2 @@
+# cat=basic/enable; type=string; label=Rest api host
+restApiHost = http://134.100.172.142

@@ -1,0 +1,37 @@
+<f:comment>
+    <!--
+    This file is part of the TYPO3 CMS project.
+
+    It is free software; you can redistribute it and/or modify it under
+    the terms of the GNU General Public License, either version 2
+    of the License, or any later version.
+
+    For the full copyright and license information, please read the
+    LICENSE.txt file that was distributed with this source code.
+
+    The TYPO3 project - inspiring people to share!
+    -->
+</f:comment>
+
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="Default" />
+
+    <f:section name="content">
+        <div id="repository-list" class="repository-list-group">
+            <div class="repository-list-title">{f:translate(key: 'subhh_oa_dashboard.repository.list.header')}</div>
+            <div class="repository-list" data-listRepositoriesUri="{listRepositoriesUri}">
+
+            <f:link.action action="show" pluginName="RepositoryDetails" pageUid="{data.uid}" arguments="{repositoryId : '0'}" id="repository-id-0" class="repository-list-item">
+                {f:translate(key: 'subhh_oa_dashboard.repository.name.all')}
+            </f:link.action>
+
+            <f:for each="{repositories}" as="repository" iteration="repositoryIterator">
+                <f:link.action action="show" pluginName="RepositoryDetails" pageUid="{data.uid}" arguments="{repositoryId : repository.id}" id="repository-id-{repository.id}" class="repository-list-item">
+                    {repository.name}
+                </f:link.action>
+            </f:for>
+            </div>
+        </div>
+    </f:section>
+</html>

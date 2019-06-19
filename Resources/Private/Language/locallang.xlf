@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-01T09:00:00Z" product-name="subhh_oa_dashboard">
+		<header/>
+		<body>
+			<trans-unit id="subhh_oa_dashboard.repository.list.header">
+				<source>Repository-Auswahl</source>
+			</trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.name.all">
+				<source>Total of all repositories</source>
+			</trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.country">
+                <source>Country</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.geoData">
+                <source>GeoData</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.technicalPlatform">
+                <source>Technical platform</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.repoType">
+                <source>Repository type</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.oaStatus">
+                <source>OA-Status</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.harvestingUrl">
+                <source>Harvesting url</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.firstIndexTimestamp">
+                <source>First index timestamp</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.repoState">
+                <source>State</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.earliestRecordTimestamp">
+                <source>Earliest record timestamp</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.latestRecordTimestamp">
+                <source>Latest record timestamp</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.recordCount">
+                <source>Record count</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.recordCountFulltext">
+                <source>Record count fulltext</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.metadataFormats">
+                <source>Metadata formats</source>
+            </trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.recordCountOa">
+                <source>Record count OA</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.active">
+                <source>ACTIVE</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.inactive">
+                <source>INACTIVE</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.yaxis.label">
+                <source>Number of records</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.last12month">
+                <source>Last 12 month</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.record_count.legend">
+                <source>All Records</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.record_count_oa.legend">
+                <source>Open Access Records</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.record_count_fulltext.legend">
+                <source>Records with fulltext</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.repository_availability.legend">
+                <source>Availability</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.sets.legend">
+                <source>Records of a Set</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.record_count.title">
+                <source>Total number of records over time</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.record_count_oa.title">
+                <source>Number of open access records over time</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.record_count_fulltext.title">
+                <source>Number of records with fulltext over time</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.licence.title">
+                <source>Licences</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.sets.title">
+                <source>Sets</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.repository_availability.title">
+                <source>Availability of the last months </source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.title">
+                <source>Document types</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.repository_availability.yaxis.label">
+                <source>Availability</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

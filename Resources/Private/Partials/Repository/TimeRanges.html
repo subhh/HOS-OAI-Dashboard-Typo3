@@ -1,0 +1,28 @@
+<f:comment>
+    <!--
+    This file is part of the TYPO3 CMS project.
+
+    It is free software; you can redistribute it and/or modify it under
+    the terms of the GNU General Public License, either version 2
+    of the License, or any later version.
+
+    For the full copyright and license information, please read the
+    LICENSE.txt file that was distributed with this source code.
+
+    The TYPO3 project - inspiring people to share!
+    -->
+</f:comment>
+
+<ul class="timeRanges">
+    <li class="timeRange-prev"><button name="timeRange-prev" value="timeRange-prev"><span class="timeRange-btn-label"><</span></button></li>
+    <f:variable name="numberOfTimeRanges" value="{f:count(subject:'{timeRanges}')}" />
+    <f:for each="{timeRanges}" as="uri" key="key" iteration="iterator">
+        <li class="{f:if(condition:'{numberOfTimeRanges - iterator.cycle} < 3', then: 'active', else: 'inactive')}
+                    {f:if(condition:'{iterator.isLast}', then: 'current', else: '')}" data-index="{iterator.cycle}">
+            <button class="timeRange-uri" name="timeRange" aria-label="Previous" value="{uri}" data-getRecordCountTimeRangeUri="{uri}">
+                <span class="timeRange-btn-label">{f:translate(key: 'subhh_oa_dashboard.chart.{key}', default: '{key}' )}</span>
+            </button>
+        </li>
+    </f:for>
+    <li class="timeRange-next"><button name="timeRange-next" value="timeRange-next"><span class="timeRange-btn-label">></span></button></li>
+</ul>

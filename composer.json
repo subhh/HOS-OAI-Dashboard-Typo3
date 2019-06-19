@@ -1,0 +1,28 @@
+{
+    "name": "eww/subhh-oa-dashboard",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "eww",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eww\\SubhhOaDashboard\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eww\\SubhhOaDashboard\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "subhh_oa_dashboard": "self.version",
+        "typo3-ter/subhh-oa-dashboard": "self.version"
+    }
+}

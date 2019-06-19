@@ -1,0 +1,90 @@
+<f:comment>
+    <!--
+    This file is part of the TYPO3 CMS project.
+
+    It is free software; you can redistribute it and/or modify it under
+    the terms of the GNU General Public License, either version 2
+    of the License, or any later version.
+
+    For the full copyright and license information, please read the
+    LICENSE.txt file that was distributed with this source code.
+
+    The TYPO3 project - inspiring people to share!
+    -->
+</f:comment>
+
+<h2 class="repository-name">{repository.name}</h2>
+<table id="repository-details" class="repository-details" data-repositoryId="{repository.id}">
+    <f:comment>
+        <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.name', value:repository.name}" />
+    </f:comment>
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.country', value:repository.country}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.geoData', value:repository.geoData}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.technicalPlatform', value:repository.technicalPlatform}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.repoType', value:repository.repoType}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.oaStatus', value:repository.oaStatus}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.harvestingUrl', value:repository.harvestingUrl}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.firstIndexTimestamp', value:repository.firstIndexTimestamp}" />
+
+    <f:if condition="{repository.repoState} == 'ACTIVE'">
+        <f:then>
+            <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.repoState', value: '{f:translate(key: \'subhh_oa_dashboard.active\')}' }" />
+        </f:then>
+        <f:else>
+            <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.repoState', value: '{f:translate(key: \'subhh_oa_dashboard.inactive\')}' }" />
+        </f:else>
+    </f:if>
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.earliestRecordTimestamp', value:repository.earliestRecordTimestamp}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.latestRecordTimestamp', value:repository.latestRecordTimestamp}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.recordCount', value:repository.recordCount}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.recordCountFulltext', value:repository.recordCountFulltext}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.recordCountOa', value:repository.recordCountOa}" />
+
+    <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.metadataFormats', value:repository.metadataFormats}" />
+</table>
+
+<div class="chart-wrapper">
+    <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count.title')}</span>
+    <div id="chartRecordCount" class="repository-chart"></div>
+    <div id="chartRecordCountTimeRanges" class="timeRanges-wrapper">
+        <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count}" />
+    </div>
+</div>
+
+<div class="chart-wrapper">
+    <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.title')}</span>
+    <div id="chartRecordCountOA" class="repository-chart"></div>
+    <div id="chartRecordCountOATimeRanges" class="timeRanges-wrapper">
+        <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count_oa}" />
+    </div>
+</div>
+
+<div class="chart-wrapper chart-wrapper-licence">
+    <div id="chartLicence" class="repository-chart" data-getRecordLicenceUri="{repository.recordLicenceUri}"></div>
+</div>
+
+<div class="chart-wrapper chart-wrapper-document-types">
+    <div id="chartDocumentTypes" class="repository-chart" data-getRecordDocumentTypesUri="{repository.recordDocumentTypesUri}"></div>
+</div>
+
+<div class="chart-wrapper chart-wrapper-sets">
+    <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.sets.title')}</span>
+    <div id="chartSets" class="repository-chart"  data-getRepositorySetsUri="{repository.repositorySetsUri}"></div>
+</div>
+
+<div class="chart-wrapper chart-wrapper-repositoryAvailability">
+    <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.repository_availability.title')}</span>
+    <div id="chartRepositoryAvailability" class="repository-chart"  data-getRepositoryAvailabilityUri="{repository.repositoryAvailabilityUri}"></div>
+</div>
