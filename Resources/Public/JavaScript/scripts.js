@@ -617,7 +617,9 @@ var chartDocumentTypes = {
  *
  */
 var repositoryList = document.getElementById("repository-list");
-repositoryList.addEventListener("load", scrollToTop(), false);
+if (repositoryList) {
+    repositoryList.addEventListener("load", scrollToTop(), false);
+}
 
 
 /*
