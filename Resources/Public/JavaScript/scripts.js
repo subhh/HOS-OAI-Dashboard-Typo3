@@ -11,6 +11,7 @@
  * The TYPO3 project - inspiring people to share!
  */
 
+(function () {
 
 function scrollToTop() {
     var repositoryDetails = document.getElementById("repository-details");
@@ -632,3 +633,5 @@ chartLicence.loadData();
 chartDocumentTypes.loadData();
 chartSets.loadData();
 
+
+})();
