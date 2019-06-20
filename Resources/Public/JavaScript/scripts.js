@@ -465,8 +465,6 @@ var chartSets = {
                 }
             })
             .then(json => {
-                console.log(json[0].length);
-
                 var newHeight = (json[0].length) * 40;
                 this.chart.resize({height: newHeight});
                 this.chart.load({
