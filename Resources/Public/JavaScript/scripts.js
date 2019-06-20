@@ -449,10 +449,19 @@ var chartSets = {
             },
             x: {
                 type: 'category',
+                tick: {
+                    multiline: true,
+                    multilineMax: 3,
+                },
             },
         },
         padding: {
             right: 50,
+        },
+        bar: {
+            width: {
+                ratio: 0.5
+            }
         }
     }),
 
