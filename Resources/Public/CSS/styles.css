@@ -74,9 +74,10 @@
     border-bottom-right-radius: .25rem;
     border: 1px solid rgba(0,0,0,.125);
     width: 100%;
+    display: inline-block;
 }
 
-.tx-subhh-oa-dashboard .repository-list-title {
+.tx-subhh-oa-dashboard .repository-list-group .repository-list-title {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     background-color: lightgray;
