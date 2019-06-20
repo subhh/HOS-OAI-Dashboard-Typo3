@@ -36,23 +36,30 @@ class DashboardApi
      */
     protected function read($endpoint)
     {
-        $requestFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Http\RequestFactory::class);
-        $url = $this->baseUri.$endpoint;
-        $additionalOptions = [
-            // Additional headers for this specific request
-            'headers' => ['Cache-Control' => 'no-cache'],
-            // Additional options, see http://docs.guzzlephp.org/en/latest/request-options.html
-            'allow_redirects' => false,
-            'cookies' => false,
-        ];
+        try {
+            $requestFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Http\RequestFactory::class);
+            $url = $this->baseUri . "fdsdgfd".$endpoint;
+            $additionalOptions = [
+                // Additional headers for this specific request
+                'headers' => ['Cache-Control' => 'no-cache'],
+                // Additional options, see http://docs.guzzlephp.org/en/latest/request-options.html
+                'allow_redirects' => false,
+                'cookies' => false,
+            ];
 
-        // Return a PSR-7 compliant response object
-        $response = $requestFactory->request($url, 'GET', $additionalOptions);
-        // Get the content as a string on a successful request
-        if ($response->getStatusCode() === 200) {
-            //if (strpos($response->getHeaderLine('Content-Type'), 'text/html') === 0) {
-            return $response->getBody()->getContents();
-            //}
+            // Return a PSR-7 compliant response object
+            $response = $requestFactory->request($url, 'GET', $additionalOptions);
+            // Get the content as a string on a successful request
+            if ($response->getStatusCode() === 200) {
+                //if (strpos($response->getHeaderLine('Content-Type'), 'text/html') === 0) {
+                return $response->getBody()->getContents();
+                //}
+            }
+
+            return NULL;
+
+        } catch (\Exception $e) {
+            return NULL;
         }
     }
 

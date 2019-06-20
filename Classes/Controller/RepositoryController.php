@@ -43,11 +43,14 @@ class RepositoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 
         $repository->setIsAll(empty($repositoryId));
 
-
         $dashboardApi = $this->objectManager->get('Eww\\SubhhOaDashboard\\Service\\DashboardApi');
-        $data = json_decode($dashboardApi->getStateAtTimePoint($repositoryId, date("Y-m-d"), $repository->getIsAll()));
 
-        if ($data) {
+
+        $jsonData = $dashboardApi->getStateAtTimePoint($repositoryId, date("Y-m-d"), $repository->getIsAll());
+        $data = json_decode($jsonData);
+
+
+        if (json_decode($jsonData,true)) {
 
             $repository->setName($data->repository->name);
             $repository->setCountry($data->repository->land);
