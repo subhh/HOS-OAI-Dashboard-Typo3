@@ -38,7 +38,7 @@ class DashboardApi
     {
         try {
             $requestFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Http\RequestFactory::class);
-            $url = $this->baseUri . "fdsdgfd".$endpoint;
+            $url = $this->baseUri .$endpoint;
             $additionalOptions = [
                 // Additional headers for this specific request
                 'headers' => ['Cache-Control' => 'no-cache'],
