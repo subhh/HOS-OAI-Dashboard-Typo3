@@ -90,6 +90,7 @@
     max-height: 204px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    max-height: 100%;
 }
 
 .tx-subhh-oa-dashboard .repository-list-item:focus,
@@ -97,6 +98,11 @@
     overflow-y: scroll;
     background-color: #82A9B3;
     color: #ffffff;
+}
+
+.tx-subhh-oa-dashboard .repository-list-item:hover {
+    text-decoration:none;
+
 }
 
 .tx-subhh-oa-dashboard .repository-list-item {
