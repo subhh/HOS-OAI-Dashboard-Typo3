@@ -102,7 +102,8 @@ if (d3_oa_dashboard.select('.details-all').empty()) {
                     method: 'GET',
                     headers: {
                         "Content-type": "application/json; charset=UTF-8"
-                    }
+                    },
+                    credentials: "include"
                 })
                 .then(json => {
                     var xGrids = [];
@@ -185,7 +186,8 @@ if (d3_oa_dashboard.select('.details-all').empty()) {
                     method: 'GET',
                     headers: {
                         "Content-type": "application/json; charset=UTF-8"
-                    }
+                    },
+                    credentials: "include"
                 })
                 .then(json => {
                     var xGrids = [];
@@ -385,7 +387,8 @@ if (d3_oa_dashboard.select('.details-all').empty()) {
                         method: 'GET',
                         headers: {
                             "Content-type": "application/json; charset=UTF-8"
-                        }
+                        },
+                        credentials: "include"
                     })
                     .then(json => {
                         var xGrids = [];
@@ -472,7 +475,8 @@ var chartSets = {
                 method: 'GET',
                 headers: {
                     "Content-type": "application/json; charset=UTF-8"
-                }
+                },
+                credentials: "include"
             })
             .then(json => {
                 var newHeight = (json[0].length) * 40;
@@ -519,7 +523,8 @@ var chartLicence = {
                 method: 'GET',
                 headers: {
                     "Content-type": "application/json; charset=UTF-8"
-                }
+                },
+                credentials: "include"
             })
             .then(json => {
                 this.chart.load({
@@ -578,8 +583,9 @@ var chartDocumentTypes = {
                 {
                     method: 'GET',
                     headers: {
-                        "Content-type": "application/json; charset=UTF-8"
-                    }
+                        "Content-type": "application/json; charset=UTF-8",
+                    },
+                    credentials: "include"
                 })
                 .then(json => {
                     this.chart.load({
