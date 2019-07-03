@@ -38,6 +38,9 @@
     hyphens: auto;
 }
 
+#chartSets svg {
+    font-size: 12px;
+}
 
 .tx-subhh-oa-dashboard .repository-name {
     margin-top: 30px;
