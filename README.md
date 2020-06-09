@@ -4,7 +4,7 @@ Typo3-Plugin for the Hamburg Open Science OAI Dashboard
 
 ## Installation
 The extension can be installed like any other extension of TYPO3, either via direct uploading in the Extension-Mananger or via composer mode.
-The directory name hast to be subhh_oa_dashboard.
+The directory name has to be subhh_oa_dashboard.
 
 ## Adding the static template of the extension
 
