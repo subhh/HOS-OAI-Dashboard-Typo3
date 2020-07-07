@@ -98,7 +98,6 @@
 
 .tx-subhh-oa-dashboard .repository-list-item:focus,
 .tx-subhh-oa-dashboard .repository-list-item:hover {
-    overflow-y: scroll;
     background-color: #82A9B3;
     color: #ffffff;
 }
