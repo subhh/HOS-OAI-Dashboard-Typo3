@@ -534,19 +534,16 @@ var chartLicence = {
                     names: json.names
                 });
 
-                var width = d3_oa_dashboard.select("#chartLicence").node().getBoundingClientRect().width;
-                if (width < 320) {
-                    this.height = 400 + Math.round(Object.keys(json.names).length * 11);
-                } else {
-                   if (width < 650) {
-                       this.height = 400 + Math.round(Object.keys(json.names).length * 11);
-                   } else {
-                       this.height = 400 + Math.round(Object.keys(json.names).length * 4);
-                   }
-                }
-                this.chart.resize({height: this.height});
-                this.chart.legend.show();
-    });
+                this.show();
+            });
+    },
+
+    show: function() {
+        this.chart.legend.show();
+        var legendHeight = d3_oa_dashboard.select("#chartLicence svg g .c3-legend-item").node().parentNode.getBoundingClientRect().height;
+
+        this.chart.resize({height: (this.height + legendHeight)});
+        this.chart.legend.show();
     },
 
     height: 350
@@ -595,24 +592,19 @@ var chartDocumentTypes = {
                         names: json.names
                     });
 
-                    var width = d3_oa_dashboard.select("#chartDocumentTypes").node().getBoundingClientRect().width;
-                    if (width < 320) {
-                        this.height = 400 + Math.round(Object.keys(json.names).length * 11);
-                    } else {
-                        if (width < 650) {
-                            this.height = 400 + Math.round(Object.keys(json.names).length * 11);
-                        } else {
-                            this.height = 400 +Math.round(Object.keys(json.names).length * 4);
-                        }
-                    }
-                    this.chart.resize({height: this.height});
-                    this.chart.legend.show();
-
+                    this.show();
                 });
     },
 
-    height: 350
+    show: function() {
+        this.chart.legend.show();
+        var legendHeight = d3_oa_dashboard.select("#chartDocumentTypes svg g .c3-legend-item").node().parentNode.getBoundingClientRect().height;
 
+        this.chart.resize({height: (this.height + legendHeight)});
+        this.chart.legend.show();
+    },
+
+    height: 350
 }
 
 
@@ -641,5 +633,13 @@ chartLicence.loadData();
 chartDocumentTypes.loadData();
 chartSets.loadData();
 
+window.onresize = function() {
+    var resizeTimeout;
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+        chartLicence.loadData();
+        chartDocumentTypes.show();
+    }, 250);
+};
 
 })();
