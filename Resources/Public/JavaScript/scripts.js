@@ -637,7 +637,7 @@ window.onresize = function() {
     var resizeTimeout;
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(function() {
-        chartLicence.loadData();
+        chartLicence.show();
         chartDocumentTypes.show();
     }, 250);
 };
