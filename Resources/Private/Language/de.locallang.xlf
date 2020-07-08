@@ -132,8 +132,8 @@
                 <target>Verfügbarkeit der letzten Monate</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.document_types.title">
-                <source>Document types</source>
-                <target>Dokument-Typen</target>
+                <source>Media types</source>
+                <target>Medientypen</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.repository_availability.yaxis.label">
                 <source>Availability</source>
