@@ -136,6 +136,22 @@ class RepositoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 
         }
 
+        $documentTypes = [];
+        foreach ($this->settings['documentTypes'] as $docType) {
+            $typeTranslation = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate(
+                'subhh_oa_dashboard.chart.document_types.'.$docType,
+                'subhh_oa_dashboard'
+            );
+
+            if (empty($typeTranslation)) {
+                $documentTypes[$docType] = $docType;
+            } else {
+                $documentTypes[$docType] = $typeTranslation;
+            }
+
+        }
+
+        $this->view->assign('documentTypes', json_encode($documentTypes));
         $this->view->assign('repository', $repository);
 
     }

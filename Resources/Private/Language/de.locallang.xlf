@@ -135,6 +135,66 @@
                 <source>Document types</source>
                 <target>Dokument-Typen</target>
             </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Audiovisual">
+                <source>Audiovisual</source>
+                <target>Audiovisuell</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Collection">
+                <source>Collection</source>
+                <target>Sammlung</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.DataPaper">
+                <source>DataPaper</source>
+                <target>Datenpublikation</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Dataset">
+                <source>Dataset</source>
+                <target>Datensatz</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Event">
+                <source>Event</source>
+                <target>Ereignis</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Image">
+                <source>Image</source>
+                <target>Bild</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.InteractiveResource">
+                <source>InteractiveResource</source>
+                <target>Interaktive Ressource</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Model">
+                <source>Model</source>
+                <target>Modell</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.PhysicalObject">
+                <source>PhysicalObject</source>
+                <target>Objekt</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Service">
+                <source>Service</source>
+                <target>Dienst</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Software">
+                <source>Software</source>
+                <target>Software</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Sound">
+                <source>Sound</source>
+                <target>Audio</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Text">
+                <source>Text</source>
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Workflow">
+                <source>Workflow</source>
+                <target>Vorgang</target>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Other">
+                <source>Other</source>
+                <target>Anderes</target>
+            </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.repository_availability.yaxis.label">
                 <source>Availability</source>
                 <target>Verfügbarkeit</target>

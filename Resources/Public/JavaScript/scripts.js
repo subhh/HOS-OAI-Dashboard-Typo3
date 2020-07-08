@@ -591,6 +591,13 @@ var chartDocumentTypes = {
                     this.chart.load({
                         columns: json.data
                     });
+
+                    d3_oa_dashboard.keys(json.names).forEach(function(key) {
+                        if (documentTypes[json.names[key]]) {
+                            json.names[key] = documentTypes[json.names[key]]
+                        }
+                    });
+
                     this.chart.load({
                         names: json.names
                     });
