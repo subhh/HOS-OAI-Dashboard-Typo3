@@ -479,17 +479,29 @@ var chartSets = {
                 credentials: "include"
             })
             .then(json => {
-                var newHeight = (json[0].length) * 40;
-                this.chart.resize({height: newHeight});
-                this.chart.load({
-                    columns: json,
-                });
+                this.sets = json;
+                this.show();
             })
             .catch(error => {
             });
+    },
 
-        height: 700;
-    }
+    show: function() {
+        var newHeight;
+        if (this.sets[0].length <= 2) {
+            newHeight = (this.sets[0].length) * 75;
+        } else {
+            newHeight = (this.sets[0].length) * 65;
+        }
+
+        this.chart.resize({height: newHeight});
+        this.chart.load({
+            columns: this.sets,
+        });
+        this.chart.resize({height: newHeight});
+    },
+
+    sets: []
 }
 
 
