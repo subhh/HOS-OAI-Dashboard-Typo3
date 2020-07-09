@@ -100,7 +100,7 @@
                 <source>Availability of the last months </source>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.document_types.title">
-                <source>Document types</source>
+                <source>Media types</source>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.repository_availability.yaxis.label">
                 <source>Availability</source>
