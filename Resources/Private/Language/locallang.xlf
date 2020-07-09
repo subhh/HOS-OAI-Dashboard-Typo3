@@ -102,6 +102,51 @@
             <trans-unit id="subhh_oa_dashboard.chart.document_types.title">
                 <source>Media types</source>
             </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Audiovisual">
+                <source>Audiovisual</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Collection">
+                <source>Collection</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.DataPaper">
+                <source>DataPaper</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Dataset">
+                <source>Dataset</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Event">
+                <source>Event</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Image">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.InteractiveResource">
+                <source>InteractiveResource</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Model">
+                <source>Model</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.PhysicalObject">
+                <source>PhysicalObject</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Service">
+                <source>Service</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Software">
+                <source>Software</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Sound">
+                <source>Sound</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Text">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Workflow">
+                <source>Workflow</source>
+            </trans-unit>
+            <trans-unit id="subhh_oa_dashboard.chart.document_types.Other">
+                <source>Other</source>
+            </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.repository_availability.yaxis.label">
                 <source>Availability</source>
             </trans-unit>

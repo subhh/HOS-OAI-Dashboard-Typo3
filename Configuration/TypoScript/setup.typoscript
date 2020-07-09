@@ -35,6 +35,25 @@ plugin.tx_subhhoadashboard {
         #callDefaultActionIfActionCantBeResolved = 1
     }
     settings {
+        # document types (media types)
+        # These types need to have a corresponding entry in locallang.xlf
+        documentTypes {
+            1 = Audiovisual
+            2 = Collection
+            3 = DataPaper
+            4 = Dataset
+            5 = Event
+            6 = Image
+            7 = InteractiveResource
+            8 = Model
+            9 = PhysicalObject
+            10 = Service
+            11 = Software
+            12 = Sound
+            13 = Text
+            14 = Workflow
+            15 = Other
+        }
     }
 }
 
