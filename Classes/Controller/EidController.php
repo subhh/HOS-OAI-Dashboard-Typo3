@@ -179,15 +179,30 @@ class EidController
         $repositoryId = $request->getQueryParams()['repositoryId'];
         $combined = $request->getQueryParams()['combined'] > 0;
 
+        $otherLimit = $request->getQueryParams()['otherLimit']? $request->getQueryParams()['otherLimit'] : 0;
+
         $objectManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Object\\ObjectManager');
         $dashboardApi = $objectManager->get('Eww\\SubhhOaDashboard\\Service\\DashboardApi');
 
         $statesAtTimePoint = json_decode($dashboardApi->getStateAtTimePoint($repositoryId, date('Y-m-d'), $combined));
 
-        $items = array();
-
+        $docTypeCount = 0;
         foreach ($statesAtTimePoint->dctypeCounts as $item) {
-            $items[$item->dc_Type] = $item->record_count;
+            $docTypeCount += $item->record_count;
+        }
+
+        $items = array();
+        $other = 0;
+        foreach ($statesAtTimePoint->dctypeCounts as $item) {
+            if ($otherLimit > 0 && $item->record_count/$docTypeCount*100 < $otherLimit) {
+                $other += $item->record_count;
+            } else {
+                $items[$item->dc_Type] = $item->record_count;
+            }
+        }
+
+        if ($otherLimit > 0 && round($other/$docTypeCount*100, 1) >= $otherLimit) {
+            $items['Other'] = $other;
         }
 
         $result = array();

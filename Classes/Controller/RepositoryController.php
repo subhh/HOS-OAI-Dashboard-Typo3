@@ -96,16 +96,21 @@ class RepositoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
                     ->build()
             );
 
+            $recordDocumentTypesParameters = array(
+                'eID' => 'getRecordDocumentTypes',
+                'repositoryId' => $repository->getId(),
+                'combined' => $repository->getIsAll()
+            );
+
+            if ($this->settings['otherLimit']) {
+                $recordDocumentTypesParameters['otherLimit'] = $this->settings['otherLimit'];
+            }
+
             $repository->setRecordDocumentTypesUri(
                 $this->uriBuilder->reset()
                     ->setCreateAbsoluteUri(true)
                     ->setUseCacheHash(false)
-                    ->setArguments(
-                        array(
-                            'eID' => 'getRecordDocumentTypes',
-                            'repositoryId' => $repository->getId(),
-                            'combined' => $repository->getIsAll()
-                        ))
+                    ->setArguments($recordDocumentTypesParameters)
                     ->build()
             );
 
