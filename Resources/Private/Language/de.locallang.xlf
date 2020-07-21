@@ -56,8 +56,8 @@
                 <target>Datum des jüngsten Datensatzes</target>
             </trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.recordCount">
-                <source>Record count</source>
-                <target>Anzahl Datensätze</target>
+                <source>Number of publications</source>
+                <target>Anzahl Publikationen</target>
             </trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.recordCountFulltext">
                 <source>Record count fulltext</source>
@@ -68,8 +68,8 @@
                 <target>Metadatenformate</target>
             </trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.recordCountOa">
-                <source>Record count OA</source>
-                <target>Anzahl Open Access Datensätze</target>
+                <source>Open Access publications</source>
+                <target>Davon Open Access-Publikationen</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.active">
                 <source>active</source>
