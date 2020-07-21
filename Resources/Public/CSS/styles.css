@@ -147,6 +147,18 @@
     margin-bottom: 35px;
 }
 
+.tx-subhh-oa-dashboard .chart-wrapper .description {
+    padding: 10px 15px 0px 15px;
+    font-size: 14px;
+}
+
+
+.tx-subhh-oa-dashboard .chart-wrapper-recordcount .description {
+    padding: 15px 15px 0px 15px;
+    font-size: 14px;
+}
+
+
 .tx-subhh-oa-dashboard .chart-wrapper-sets,
 .tx-subhh-oa-dashboard .chart-wrapper-repositoryAvailability {
     width: 100%;

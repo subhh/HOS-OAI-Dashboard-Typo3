@@ -488,7 +488,7 @@ var chartSets = {
 
     show: function() {
         var newHeight;
-        if (this.sets[0].length <= 2) {
+        if (this.sets[0].length <= 3) {
             newHeight = (this.sets[0].length) * 75;
         } else {
             newHeight = (this.sets[0].length) * 65;

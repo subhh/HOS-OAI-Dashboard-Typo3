@@ -55,36 +55,42 @@
     <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.metadataFormats', value:repository.metadataFormats}" />
 </table>
 
-<div class="chart-wrapper">
+<div class="chart-wrapper chart-wrapper-recordcount">
     <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count.title')}</span>
     <div id="chartRecordCount" class="repository-chart"></div>
     <div id="chartRecordCountTimeRanges" class="timeRanges-wrapper">
         <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count}" />
     </div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.record_count.description')}</div>
 </div>
 
-<div class="chart-wrapper">
+<div class="chart-wrapper chart-wrapper-recordcount">
     <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.title')}</span>
     <div id="chartRecordCountOA" class="repository-chart"></div>
     <div id="chartRecordCountOATimeRanges" class="timeRanges-wrapper">
         <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count_oa}" />
     </div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.description')}</div>
 </div>
 
 <div class="chart-wrapper chart-wrapper-licence">
     <div id="chartLicence" class="repository-chart" data-getRecordLicenceUri="{repository.recordLicenceUri}"></div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.licence.description')}</div>
 </div>
 
 <div class="chart-wrapper chart-wrapper-document-types">
     <div id="chartDocumentTypes" class="repository-chart" data-getRecordDocumentTypesUri="{repository.recordDocumentTypesUri}"></div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.document_types.description')}</div>
 </div>
 
 <div class="chart-wrapper chart-wrapper-sets">
     <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.sets.title')}</span>
     <div id="chartSets" class="repository-chart"  data-getRepositorySetsUri="{repository.repositorySetsUri}"></div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.sets.description')}</div>
 </div>
 
 <div class="chart-wrapper chart-wrapper-repositoryAvailability">
     <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.repository_availability.title')}</span>
     <div id="chartRepositoryAvailability" class="repository-chart"  data-getRepositoryAvailabilityUri="{repository.repositoryAvailabilityUri}"></div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.repository_availability.description')}</div>
 </div>
