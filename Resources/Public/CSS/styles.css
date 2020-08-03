@@ -431,3 +431,7 @@ ul.timeRanges .timeRange-btn-label {
         height: 100%;
     }
 }
+
+.description {
+    display: none !important;
+}
