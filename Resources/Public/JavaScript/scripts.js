@@ -16,7 +16,13 @@
 function scrollToTop() {
     var repositoryDetails = document.getElementById("repository-details");
     var repositoryId = repositoryDetails.getAttribute('data-repositoryId');
+
+    if (repositoryId.length == 0) {
+        repositoryId = "0"
+    }
+    
     var repositoryItem = document.getElementById("repository-id-"+repositoryId);
+
     if (repositoryItem) {
         repositoryItem.classList.add("active");
         repositoryItem.scrollIntoView({behavior: 'auto', block: 'center'});
