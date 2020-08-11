@@ -5,11 +5,11 @@
 		<body>
 			<trans-unit id="subhh_oa_dashboard.repository.list.header">
 				<source>Repository selection</source>
-				<target>Repository-Auswahl</target>
+				<target>Repositorium-Auswahl</target>
 			</trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.name.all">
 				<source>Total of all repositories</source>
-				<target>Summe aller Repositories</target>
+				<target>Summe aller Repositorien</target>
 			</trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.name">
 				<source>Name</source>

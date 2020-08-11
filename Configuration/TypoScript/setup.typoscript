@@ -56,7 +56,7 @@ plugin.tx_subhhoadashboard {
         }
 
         # Values below this percentage limit are summarized into "Other"
-        otherLimit = 1
+        otherLimit = 0.1
     }
 }
 
