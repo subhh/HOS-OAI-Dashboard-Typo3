@@ -200,28 +200,28 @@
                 <target>Verfügbarkeit</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.record_count.description">
-                <source>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</source>
-                <target>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</target>
+                <source></source>
+                <target>Der monatliche Zuwachs an neuen Publikationen einer Einrichtung wird für den Zeitraum eines Jahres grafisch dargestellt. Die Einteilung des Zuwachses erfolgt entsprechend der unterschiedlichen Gesamtanzahl an Publikationen nicht einheitlich.</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.record_count_oa.description">
-                <source>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</source>
-                <target>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</target>
+                <source></source>
+                <target>Von besonderem Interesse sind die Open-Access-Publikationen als Teil der Gesamtanzahl der Publikationen. Sie werden gesondert mit ihrem monatlichen Zuwachs innerhalb eines Jahres dargestellt.</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.licence.description">
-                <source>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</source>
-                <target>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</target>
+                <source></source>
+                <target>Das Kreisdiagramm verbildlicht die Anteile der mit den Publikationen verknüpften Lizenzen. Mögliche Differenzierungen im Bereich der Zugriffsbeschränkungen sind in der einen Kategorie "Zugriffsbeschränkt" zusammengefasst.</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.document_types.description">
-                <source>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</source>
-                <target>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</target>
+                <source></source>
+                <target>Alle Publikationen einer Einrichtung sind einem Medientyp zugeordnet, dessen jeweiliger Anteil an der Gesamtanzahl hier bildlich dargestellt ist. Dabei sind alle möglichen Medientypen ab einem Anteil von 0,1% berücksichtigt.</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.sets.description">
-                <source>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</source>
-                <target>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</target>
+                <source></source>
+                <target>Die Anzahl der Publikationen der Einrichtung wird nach Zugehörigkeit zu ihren spezifischen Datenquellen (Sets) aufgeschlüsselt.</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.repository_availability.description">
-                <source>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</source>
-                <target>Lorem ipsum dolor sit amet, ne ridens tacimates sit, nisl doctus similique ad vis, id vis dicunt euripidis. Audiam nusquam facilisis cu mea, cibo comprehensam cum ad, dicam legimus pri an. Te pro mazim equidem consetetur, eos dico commodo ea. Nostrud habemus eu mel, ei prima eloquentiam per, no quo ignota copiosae. Nusquam dissentias eos eu, summo novum discere eu per. Ad quod case vidisse vim, elit denique tincidunt et per.</target>
+                <source></source>
+                <target>Über einen Zeitraum von 10 Monaten hinweg wird die Verfügbarkeit der Datensätze der Einrichtung visualisiert. Der Wert 1 entspricht hierbei einer uneingeschränkten Zugänglichkeit, die aufgrund technischer Aspekte evtl. auch vorübergehend unterbrochen sein kann.</target>
             </trans-unit>
 		</body>
 	</file>

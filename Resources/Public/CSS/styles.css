@@ -156,6 +156,7 @@
 .tx-subhh-oa-dashboard .chart-wrapper-recordcount .description {
     padding: 15px 15px 0px 15px;
     font-size: 14px;
+    height: 130px;
 }
 
 
@@ -432,6 +433,3 @@ ul.timeRanges .timeRange-btn-label {
     }
 }
 
-.description {
-    display: none !important;
-}
