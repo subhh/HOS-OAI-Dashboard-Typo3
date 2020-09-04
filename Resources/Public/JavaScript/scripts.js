@@ -77,6 +77,8 @@ if (d3_oa_dashboard.select('.details-all').empty()) {
             },
             axis: {
                 y: {
+                    //min: 0,
+                    //padding: 0,
                     label: {
                         text: SUBHH_OA_DASHBOARD_CHART_YAXIS_LABEL,
                         position: 'outer-middle'
@@ -161,6 +163,8 @@ if (d3_oa_dashboard.select('.details-all').empty()) {
             },
             axis: {
                 y: {
+                    //min: 0,
+                    //padding: 0,
                     label: {
                         text: SUBHH_OA_DASHBOARD_CHART_YAXIS_LABEL,
                         position: 'outer-middle'

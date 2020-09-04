@@ -4,10 +4,13 @@
 		<header/>
 		<body>
 			<trans-unit id="subhh_oa_dashboard.repository.list.header">
-				<source>Repository-Auswahl</source>
+				<source>Institutions</source>
 			</trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.name.all">
-				<source>Total of all repositories</source>
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="subhh_oa_dashboard.repository.name.all.header">
+                <source>Total of all institutions</source>
 			</trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.name">
 				<source>Name</source>
