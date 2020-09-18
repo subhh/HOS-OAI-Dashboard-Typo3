@@ -5,11 +5,11 @@
 		<body>
 			<trans-unit id="subhh_oa_dashboard.repository.list.header">
 				<source>Repository selection</source>
-				<target>Repositorium-Auswahl</target>
+				<target>Einrichtungen</target>
 			</trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.name.all">
 				<source>Total of all repositories</source>
-				<target>Summe aller Repositorien</target>
+				<target>Alle Einrichtungen</target>
 			</trans-unit>
 			<trans-unit id="subhh_oa_dashboard.repository.name">
 				<source>Name</source>
@@ -105,7 +105,7 @@
              </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.sets.legend">
                 <source>Records of a Set</source>
-                <target>Datensätze je Set</target>
+                <target>Datensätze pro Datenquelle</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.record_count.title">
                 <source>Total number of records over time</source>
@@ -124,8 +124,8 @@
                 <target>Lizenzen</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.sets.title">
-                <source>Sets</source>
-                <target>Sets</target>
+                <source>Sources</source>
+                <target>Datenquellen</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.repository_availability.title">
                 <source>Availability of the last months </source>
@@ -217,7 +217,7 @@
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.sets.description">
                 <source></source>
-                <target>Die Anzahl der Publikationen der Einrichtung wird nach Zugehörigkeit zu ihren spezifischen Datenquellen (Sets) aufgeschlüsselt.</target>
+                <target>Die Publikationen einer Einrichtung werden aus einer oder mehreren Datenquellen bezogen. Das Diagramm zeigt an, wieviel Datensätze pro Datenquelle geliefert werden.</target>
             </trans-unit>
             <trans-unit id="subhh_oa_dashboard.chart.repository_availability.description">
                 <source></source>
