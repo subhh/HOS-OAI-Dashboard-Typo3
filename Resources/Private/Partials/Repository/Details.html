@@ -55,23 +55,23 @@
     <f:render partial="Repository/Detail" arguments="{labelKey:'subhh_oa_dashboard.repository.metadataFormats', value:repository.metadataFormats}" />
 </table>
 
-<!-- <div class="chart-wrapper chart-wrapper-recordcount"> -->
-<!--     <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count.title')}</span> -->
-<!--     <div id="chartRecordCount" class="repository-chart"></div> -->
-<!--     <div id="chartRecordCountTimeRanges" class="timeRanges-wrapper"> -->
-<!--         <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count}" /> -->
-<!--     </div> -->
-<!--     <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.record_count.description')}</div> -->
-<!-- </div> -->
+<div class="chart-wrapper chart-wrapper-recordcount" style="display: none;">
+    <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count.title')}</span>
+    <div id="chartRecordCount" class="repository-chart"></div>
+    <div id="chartRecordCountTimeRanges" class="timeRanges-wrapper">
+        <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count}" />
+    </div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.record_count.description')}</div>
+</div>
 
-<!-- <div class="chart-wrapper chart-wrapper-recordcount"> -->
-<!--     <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.title')}</span> -->
-<!--     <div id="chartRecordCountOA" class="repository-chart"></div> -->
-<!--     <div id="chartRecordCountOATimeRanges" class="timeRanges-wrapper"> -->
-<!--         <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count_oa}" /> -->
-<!--     </div> -->
-<!--     <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.description')}</div> -->
-<!-- </div> -->
+<div class="chart-wrapper chart-wrapper-recordcount" style="display: none;">
+    <span class="chart-title">{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.title')}</span>
+    <div id="chartRecordCountOA" class="repository-chart"></div>
+    <div id="chartRecordCountOATimeRanges" class="timeRanges-wrapper">
+        <f:render partial="Repository/TimeRanges" arguments="{timeRanges:repository.recordCountTimeRangeUris.record_count_oa}" />
+    </div>
+    <div class="description">{f:translate(key: 'subhh_oa_dashboard.chart.record_count_oa.description')}</div>
+</div>
 
 <div class="chart-wrapper chart-wrapper-licence">
     <div id="chartLicence" class="repository-chart" data-getRecordLicenceUri="{repository.recordLicenceUri}"></div>
